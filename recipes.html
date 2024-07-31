@@ -81,10 +81,22 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="recipes.html">Recipes</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item collapse" id="searchInput">
+                                <input type="text" class="nav-link form-control border-1 border-black"
+                                    style="border:1px solid black" placeholder="Search...">
+                                <!-- <a class="" href="recipes.html">Recipes</a> -->
+                            </li>
+                            <!-- <li class="nav-item">
                                 <a class="nav-link" href="javascript:void(0);">
                                     <i class="fas fa-search"></i>
                                 </a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0);" id="searchIcon">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                                <!-- <div class="collapse">
+                                </div> -->
                             </li>
                             <!--
                                 <li class="nav-item dropdown">
@@ -203,7 +215,10 @@
             $(document).on("click", ".dish-card", function (e) {
                 e.preventDefault();
                 window.open('recipes-detail.html', '_self');
-            })
+            });
+            $('#searchIcon').on('click', function () {
+                $('#searchInput').toggleClass('show');
+            });
         });
     </script>
 </body>

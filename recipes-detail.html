@@ -273,31 +273,41 @@
                             <li class="mx-0">
                                 <label for="cup_water_lukewarm">
                                     <input type="checkbox" id="cup_water_lukewarm">
-                                    <strike>cup water lukewarm.</strike>
+                                    <span>
+                                        cup water lukewarm.
+                                    </span>
                                 </label>
                             </li>
                             <li class="mx-0">
                                 <label for="cups_all-purpose_flour">
                                     <input type="checkbox" id="cups_all-purpose_flour">
-                                    cups all-purpose flour.
+                                    <span>
+                                        cups all-purpose flour.
+                                    </span>
                                 </label>
                             </li>
                             <li class="mx-0">
                                 <label for="tsp_instant_yeast">
                                     <input type="checkbox" id="tsp_instant_yeast">
-                                    tsp instant yeast.
+                                    <span>
+                                        tsp instant yeast.
+                                    </span>
                                 </label>
                             </li>
                             <li class="mx-0">
                                 <label for="tsp_salt">
                                     <input type="checkbox" id="tsp_salt">
-                                    tsp salt.
+                                    <span>
+                                        tsp salt.
+                                    </span>
                                 </label>
                             </li>
                             <li class="mx-0">
                                 <label for="tsp_sugar">
                                     <input type="checkbox" id="tsp_sugar">
-                                    tsp sugar.
+                                    <span>
+                                        tsp sugar.
+                                    </span>
                                 </label>
                             </li>
                         </ul>
@@ -312,31 +322,41 @@
                             <li class="mx-0">
                                 <label for="red_sauce">
                                     <input type="checkbox" id="red_sauce">
-                                    red sauce
+                                    <span>
+                                        red sauce
+                                    </span>
                                 </label>
                             </li>
                             <li class="mx-0">
                                 <label for="¼_red_onion">
                                     <input type="checkbox" id="¼_red_onion">
-                                    ¼ red onion
+                                    <span>
+                                        ¼ red onion
+                                    </span>
                                 </label>
                             </li>
                             <li class="mx-0">
                                 <label for="½_green_pepper">
                                     <input type="checkbox" id="½_green_pepper">
-                                    ½ green pepper
+                                    <span>
+                                        ½ green pepper
+                                    </span>
                                 </label>
                             </li>
                             <li class="mx-0">
                                 <label for="½_red_pepper">
                                     <input type="checkbox" id="½_red_pepper">
-                                    ½ red pepper
+                                    <span>
+                                        ½ red pepper
+                                    </span>
                                 </label>
                             </li>
                             <li class="mx-0">
                                 <label for="rosemary">
                                     <input type="checkbox" id="rosemary">
-                                    rosemary
+                                    <span>
+                                        rosemary
+                                    </span>
                                 </label>
                             </li>
                         </ul>
@@ -474,6 +494,15 @@
     </footer>
     <script>
         $(document).ready(function () {
+            $(document).on("change", "input[type='checkbox']", function (e) {
+                let $span = $(this).closest("li").find("span");
+                let text = $span.text(); // Get the plain text without HTML tags
+                if ($(this).prop("checked")) {
+                    $span.html(`<strike>${text}</strike>`);
+                } else {
+                    $span.html(text);
+                }
+            });
         });
     </script>
 </body>

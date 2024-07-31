@@ -115,43 +115,43 @@
             </div>
         </div>
         <div class="row mt-lg-5">
-            <div class="col-md-4 dish-card">
+            <div class="col-md-4 dish-card" style="cursor: pointer;">
                 <img src="assets/img/handhelds/Mask group.png" class="img-fluid" alt="Mushroom Parmesan">
                 <p class="dish-title">Mushroom Parmesan</p>
             </div>
-            <div class="col-md-4 dish-card">
+            <div class="col-md-4 dish-card" style="cursor: pointer;">
                 <img src="assets/img/handhelds/Mask group-1.png" class="img-fluid" alt="Spring Vegetable Paella">
                 <p class="dish-title">Spring Vegetable Paella</p>
             </div>
-            <div class="col-md-4 dish-card">
+            <div class="col-md-4 dish-card" style="cursor: pointer;">
                 <img src="assets/img/handhelds/Mask group-2.png" class="img-fluid" alt="Socca with Zucchini and Olives">
                 <p class="dish-title">Socca with Zucchini and Olives</p>
             </div>
         </div>
         <div class="row mt-lg-5">
-            <div class="col-md-4 dish-card">
+            <div class="col-md-4 dish-card" style="cursor: pointer;">
                 <img src="assets/img/handhelds/Mask group.png" class="img-fluid" alt="Mushroom Parmesan">
                 <p class="dish-title">Mushroom Parmesan</p>
             </div>
-            <div class="col-md-4 dish-card">
+            <div class="col-md-4 dish-card" style="cursor: pointer;">
                 <img src="assets/img/handhelds/Mask group-1.png" class="img-fluid" alt="Spring Vegetable Paella">
                 <p class="dish-title">Spring Vegetable Paella</p>
             </div>
-            <div class="col-md-4 dish-card">
+            <div class="col-md-4 dish-card" style="cursor: pointer;">
                 <img src="assets/img/handhelds/Mask group-2.png" class="img-fluid" alt="Socca with Zucchini and Olives">
                 <p class="dish-title">Socca with Zucchini and Olives</p>
             </div>
         </div>
         <div class="row mt-lg-5">
-            <div class="col-md-4 dish-card">
+            <div class="col-md-4 dish-card" style="cursor: pointer;">
                 <img src="assets/img/handhelds/Mask group.png" class="img-fluid" alt="Mushroom Parmesan">
                 <p class="dish-title">Mushroom Parmesan</p>
             </div>
-            <div class="col-md-4 dish-card">
+            <div class="col-md-4 dish-card" style="cursor: pointer;">
                 <img src="assets/img/handhelds/Mask group-1.png" class="img-fluid" alt="Spring Vegetable Paella">
                 <p class="dish-title">Spring Vegetable Paella</p>
             </div>
-            <div class="col-md-4 dish-card">
+            <div class="col-md-4 dish-card" style="cursor: pointer;">
                 <img src="assets/img/handhelds/Mask group-2.png" class="img-fluid" alt="Socca with Zucchini and Olives">
                 <p class="dish-title">Socca with Zucchini and Olives</p>
             </div>
@@ -200,6 +200,10 @@
     </footer>
     <script>
         $(document).ready(function () {
+            $(document).on("click", ".dish-card", function (e) {
+                e.preventDefault();
+                window.open('recipes-detail.html', '_self');
+            })
         });
     </script>
 </body>

@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+    <script src="assets/plugins/jquery/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <title>My Plant Based Grub</title>
+    <style>
+        @font-face {
+            font-family: "Cooper Lt BT";
+            src: url("assets/Font/cooperboldbt.ttf") format("woff2"),
+                url("assets/Font/Futura\ Bold\ font.ttf") format("woff2"),
+                url("assets/Font/Futura-CondensedLight.otf") format("woff2"),
+                url("assets/Font/FuturaPTBold.otf") format("woff2"),
+                url("assets/Font/FuturaPTCondBoldOblique.otf") format("woff2"),
+                url("assets/Font/cooperlightbt.ttf") format("woff");
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <style>
+        .dish-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .dish-title {
+            text-align: left;
+            padding-left: 5px;
+            padding-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header Start -->
+        <div class="row">
+            <div class="col-ms-12">
+                <div class="top-header">
+                    <div class="icons">
+                        <div class="icon">
+                            <i class="fab fa-pinterest" style="color: #CB1F24;"></i>
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <nav class="navbar navbar-expand-lg navbar-white bg-white">
+                    <!-- <div class="container-fluid"> -->
+                    <a class="navbar-brand" href="">
+                        <strong class="heading" style="font-size: 50px; line-height: 1;word-spacing: 5px;">
+                            my<br>
+                            plant based grub
+                        </strong><br>
+                        <strong class="heading">
+                            APPROACHABLE EAT
+                        </strong>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about-us.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="recipes.html">Recipes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0);">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                            </li>
+                            <!--
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Dropdown link
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="">Action</a></li>
+                                        <li><a class="dropdown-item" href="">Another action</a></li>
+                                        <li><a class="dropdown-item" href="">Something else here</a></li>
+                                    </ul>
+                                </li> -->
+                        </ul>
+                    </div>
+                    <!-- </div> -->
+                </nav>
+            </div>
+        </div>
+        <!-- Header End -->
+        <div class="row mt-lg-5">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mt-2 mb-1">
+                <img src="assets/img/handhelds/Mask group-6.png" class="img-fluid w-100 rounded-0">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mt-2 mb-1">
+                <img src="assets/img/handhelds/Mask group-7.png" class="img-fluid w-100 rounded-0">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mt-2 mb-1">
+                <img src="assets/img/handhelds/Mask group-2.png" class="img-fluid w-100 rounded-0">
+            </div>
+        </div>
+        <div class="row mt-lg-5">
+            <div class="col-sm-12 text-center">
+                <p class="fs-5 fs-md-5 fs-lg-4">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+                <p class="fs-5 fs-md-5 fs-lg-4 mt-5">
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+                    default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+                    infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
+                    (injected humour and the like).
+                </p>
+            </div>
+        </div>
+        <div class="row mt-lg-5 h-50">
+            <div class="col-sm-12 col-md-8 col-lg-8">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h1 class="heading fs-md-1 fs-sm-3" style="font-size: 45px;">Amazing Vegetable Pizza</h1>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="icons mt-5">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 text-start justify-content-start align-items-center">
+                        <button class=" btn btn-defult">
+                            <i class="fas fa-print"></i>&nbsp;
+                            Print Recipe
+                        </button>
+                    </div>
+                    <div class="col-sm-9">
+                        <p class="p-2">
+                            Every night can be pizza night, if you ask me. Just throw whatever vegetable leftovers you
+                            have on there and enjoy!
+                        </p>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="mt-2">
+                            <span style="background-color: #3C373B !important;"
+                                class="badge text-white p-2 mx-lg-4 mx-md-2 mx-sm-1">
+                                <strong>Course </strong>
+                                Pizza
+                            </span>
+                            <span style="background-color: #3C373B !important;"
+                                class="badge text-white p-2 mx-lg-4 mx-md-2 mx-sm-1">
+                                <strong>Cuisine </strong>
+                                Italian
+                            </span>
+                            <span style="background-color: #3C373B !important;"
+                                class="badge text-white p-2 mx-lg-4 mx-md-2 mx-sm-1">
+                                <strong>Keyword </strong>
+                                Vegetarian
+                            </span>
+                        </div>
+                        <div class="mt-2">
+                            <span style="background-color: #3C373B !important;"
+                                class="badge text-white p-2 mx-lg-4 mx-md-2 mx-sm-1">
+                                <strong>Allergen </strong>
+                                Fish Free, Peanut Free
+                            </span>
+                            <span style="background-color: #3C373B !important;"
+                                class="badge text-white p-2 mx-lg-4 mx-md-2 mx-sm-1">
+                                <strong>Prep Time </strong>
+                                15 mins
+                            </span>
+                            <span style="background-color: #3C373B !important;"
+                                class="badge text-white p-2 mx-lg-4 mx-md-2 mx-sm-1">
+                                <strong>Cook Time </strong>
+                                15 mins
+                            </span>
+                        </div>
+                        <div class="mt-2">
+                            <span style="background-color: #3C373B !important;"
+                                class="badge text-white p-2 mx-lg-4 mx-md-2 mx-sm-1">
+                                <strong>Resting Time </strong>
+                                30 mins
+                            </span>
+                            <span style="background-color: #3C373B !important;"
+                                class="badge text-white p-2 mx-lg-4 mx-md-2 mx-sm-1">
+                                <strong>Total Time </strong>
+                                1 hr
+                            </span>
+                            <span style="background-color: #3C373B !important;"
+                                class="badge text-white p-2 mx-lg-4 mx-md-2 mx-sm-1">
+                                <strong>Servings </strong>
+                                2 pizzas
+                            </span>
+                        </div>
+                        <div class="mt-2">
+                            <span style="background-color: #3C373B !important;"
+                                class="badge text-white p-2 mx-lg-4 mx-md-2 mx-sm-1">
+                                <strong>Calories </strong>
+                                482
+                            </span>
+                            <span style="background-color: #3C373B !important;"
+                                class="badge text-white p-2 mx-lg-4 mx-md-2 mx-sm-1">
+                                <strong>Author </strong>
+                                Brecht
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <img src="assets/img/amazing-vegetable-pizza/image 14.png" class="img-fluid w-100 rounded-0">
+            </div>
+        </div>
+        <div class="row mt-lg-5">
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1 class="heading">
+                            Equipment
+                        </h1>
+                    </div>
+                    <div class="col-sm-12">
+                        <ul>
+                            <li>Pizza Peel</li>
+                            <li>Rolling Pin (optional)</li>
+                            <li>Pizza Cutter or scissors</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-lg-5">
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1 class="heading">
+                            Ingredients
+                        </h1>
+                    </div>
+                    <div class="col-sm-12">
+                        <h1 class="heading" style="font-family: 'Futura MD LT' !important;">
+                            Pizza Dough
+                        </h1>
+                    </div>
+                    <div class="col-sm-12">
+                        <ul style="list-style-type: none;">
+                            <li class="mx-0">
+                                <label for="cup_water_lukewarm">
+                                    <input type="checkbox" id="cup_water_lukewarm">
+                                    cup water lukewarm.
+                                </label>
+                            </li>
+                            <li class="mx-0">
+                                <label for="cups_all-purpose_flour">
+                                    <input type="checkbox" id="cups_all-purpose_flour">
+                                    cups all-purpose flour.
+                                </label>
+                            </li>
+                            <li class="mx-0">
+                                <label for="tsp_instant_yeast">
+                                    <input type="checkbox" id="tsp_instant_yeast">
+                                    tsp instant yeast.
+                                </label>
+                            </li>
+                            <li class="mx-0">
+                                <label for="tsp_salt">
+                                    <input type="checkbox" id="tsp_salt">
+                                    tsp salt.
+                                </label>
+                            </li>
+                            <li class="mx-0">
+                                <label for="tsp_sugar">
+                                    <input type="checkbox" id="tsp_sugar">
+                                    tsp sugar.
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12">
+                        <h1 class="heading" style="font-family: 'Futura MD LT' !important;">
+                            Pizza Toppings
+                        </h1>
+                    </div>
+                    <div class="col-sm-12">
+                        <ul style="list-style-type: none;">
+                            <li class="mx-0">
+                                <label for="red_sauce">
+                                    <input type="checkbox" id="red_sauce">
+                                    red sauce
+                                </label>
+                            </li>
+                            <li class="mx-0">
+                                <label for="¼_red_onion">
+                                    <input type="checkbox" id="¼_red_onion">
+                                    ¼ red onion
+                                </label>
+                            </li>
+                            <li class="mx-0">
+                                <label for="½_green_pepper">
+                                    <input type="checkbox" id="½_green_pepper">
+                                    ½ green pepper
+                                </label>
+                            </li>
+                            <li class="mx-0">
+                                <label for="½_red_pepper">
+                                    <input type="checkbox" id="½_red_pepper">
+                                    ½ red pepper
+                                </label>
+                            </li>
+                            <li class="mx-0">
+                                <label for="rosemary">
+                                    <input type="checkbox" id="rosemary">
+                                    rosemary
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-lg-5">
+            <div class="col-sm-12">
+                <h1 class="heading fs-md-6 fs-sm-6">
+                    Instructions
+                </h1>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-8">
+                <ol>
+                    <li>
+                        <div class="row">
+                            <div class="col-sm-12 mb-4" style="line-height: 8px;">
+                                <p class="fw-medium">
+                                    Combine the water, yeast and sugar in a bowl. Rest for 5 minutes.
+                                </p>
+                                <small>
+                                    1 cup water, 1 tsp instant yeast, 1 tsp sugar
+                                </small>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-sm-12 mb-4" style="line-height: 8px;">
+                                <p class="fw-medium">
+                                    cups all-purpose flour, 1 tsp salt.
+                                </p>
+                                <small>
+                                    2 cups all-purpose flour, 1 tsp salt
+                                </small>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-sm-12 mb-4" style="line-height: 8px;">
+                                <p class="fw-medium">
+                                    Add the yeast mixture and knead until you get a soft ball.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-sm-12 mb-4" style="line-height: 8px;">
+                                <p class="fw-medium">
+                                    Place in a bowl and cover. Let rise for 30 minutes.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-sm-12 mb-4" style="line-height: 8px;">
+                                <p class="fw-medium">
+                                    Pre-heat the oven to 400 °F or 450 °F.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-sm-12 mb-4" style="line-height: 8px;">
+                                <p class="fw-medium">
+                                    Divide the dough and form pizzas.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-sm-12 mb-4" style="line-height: 8px;">
+                                <p class="fw-medium">
+                                    Top the pizzas with sauce and vegetables, cook for 15 minutes on the pizza stone.
+                                </p>
+                                <small>
+                                    red sauce, 1/4 red onion, 1/4 green pepper, 1/4 red pepper, rosemary
+                                </small>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class=" my-auto">
+                    <img src="assets/img/instructions/image 26.png">
+                </div>
+            </div>
+
+            <!-- <div class="col-sm-12 col-md-6 col-lg-4" style="position: relative;">
+                <div class="my-auto">
+                    <img src="assets/img/instructions/image 26.png" style="position: absolute; bottom: 0; right: 0;">
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <footer class="w-100 mt-lg-5">
+        <div class="footer-top">
+            <div class="logo heading">
+                <strong class="heading text-start"
+                    style="font-size: 50px; line-height: 1;word-spacing: 5px;">my<br>plant based
+                    grub</strong>
+            </div>
+            <div class="footer-links">
+                <a href="#">MYPLANTBASEDGRUB</a>
+                <a href="#">PRIVACY POLICY</a>
+                <a href="#">TERMS</a>
+            </div>
+        </div>
+        <hr style="height: 3px; background-color: #000; border: none;margin: 0;">
+        <div class="footer-bottom">
+            <div class="social-links">
+                <span>FIND US</span>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Recipes</a>
+                <a href="#">About</a>
+            </div>
+            <div class="footer-text">
+                <p>Simple Recipes That<br>Make you Feel Good</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function () {
+        });
+    </script>
+</body>
+
+</html>

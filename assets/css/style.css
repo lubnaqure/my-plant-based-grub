@@ -1,122 +1,133 @@
 footer {
-    background-color: #d1d5db;
-    padding: 20px;
-    text-align: center;
+  background-color: #d1d5db;
+  padding: 20px;
+  text-align: center;
 }
 
 .footer-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
 }
 
 .logo strong {
-    font-size: 38px;
-    line-height: 1;
+  font-size: 38px;
+  line-height: 1;
 }
 
 .footer-links a {
-    margin: 0 10px;
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
+  margin: 0 10px;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
 }
 
 .footer-bottom hr {
-    border: none;
-    border-top: 1px solid #000;
-    margin: 20px 0;
+  border: none;
+  border-top: 1px solid #000;
+  margin: 20px 0;
 }
 
 .social-links {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .social-links span {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .social-links a {
-    margin: 0 5px;
-    color: #000;
-    font-size: 20px;
+  margin: 0 5px;
+  color: #000;
+  font-size: 20px;
 }
 
 .nav-links a {
-    margin: 0 15px;
-    color: #000;
-    text-decoration: none;
-    font-size: 18px;
+  margin: 0 15px;
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .footer-text {
-    text-align: right;
+  text-align: right;
 }
 
 .footer-text p {
-    margin: 0;
-    font-size: 14px;
+  margin: 0;
+  font-size: 14px;
 }
 
 .btn-my-color {
-    background-color: #b8bacf !important;
-    padding: 10px 25px 10px 25px !important;
+  background-color: #b8bacf !important;
+  padding: 10px 25px 10px 25px !important;
 }
 
 .w-90 {
-    width: 90% !important;
-    margin: 0px auto !important;
+  width: 90% !important;
+  margin: 0px auto !important;
 }
 .heading {
-    font-family: "Cooper Lt BT", "Century Gothic", serif;
-    text-align: left !important;
+  font-family: "Cooper Lt BT", "Century Gothic", serif;
+  text-align: left !important;
 }
 
 body {
-    font-family: "Century Gothic", serif;
-    background: white !important;
-    box-sizing: border-box;
+  font-family: "Century Gothic", serif;
+  background: white !important;
+  box-sizing: border-box;
 }
 
 .top-header {
-    width: 100%;
+  width: 100%;
 }
 
 .top-header .icons {
-    float: right;
-    margin-right: 10px;
-    padding: 10px;
+  float: right;
+  margin-right: 10px;
+  padding: 10px;
 }
 
 .top-header .icons .icon i {
-    padding: 2px;
-    font-size: 28px;
+  padding: 2px;
+  font-size: 28px;
 }
 
 .top-header .icons .icon .fa-instagram {
-    background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .whats-new-img {
-    width: 100% !important;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-radius: 3% !important;
+  width: 100% !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 3% !important;
 }
 
 .col-md-2 > .img > img {
-    width: 90% !important;
-    height: auto;
-    margin: 0px auto !important;
+  width: 90% !important;
+  height: auto;
+  margin: 0px auto !important;
+}
+
+.icons {
+  cursor: pointer;
+}
+.icons i {
+  font-size: 19px;
+}
+
+.text-golden {
+  color: gold;
 }

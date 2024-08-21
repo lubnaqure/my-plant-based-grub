@@ -111,7 +111,7 @@ body {
 .whats-new-img {
   width: 100% !important;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover !important;
   border-radius: 3% !important;
 }
 
@@ -131,3 +131,15 @@ body {
 .text-golden {
   color: gold;
 }
+
+/* .ic {
+  font-size: 2rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.ic:hover,
+.ic.selected {
+  color: gold;
+} */

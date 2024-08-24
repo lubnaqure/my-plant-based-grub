@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Cooper Lt BT";
+  src: url("assets/Font/cooperboldbt.ttf") format("woff2"),
+    url("assets/Font/Futura Bold font.ttf"),
+    url("assets/Font/cooperlightbt.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 footer {
   background-color: #d1d5db;
   padding: 20px;
@@ -56,9 +64,11 @@ footer {
   color: #000;
   text-decoration: none;
   font-size: 18px;
+  font-family: "FuturaBold", sans-serif; /* Apply the custom font */
 }
 
 .footer-text {
+  /* font-family: "FuturaBold", sans-serif; */
   text-align: right;
 }
 
@@ -87,6 +97,23 @@ body {
   box-sizing: border-box;
 }
 
+.nav-item:hover.nav-link {
+  color: white !important;
+}
+.submenu-item {
+  display: none;
+}
+
+.submenu:hover .submenu-item {
+  display: block;
+}
+.submenu-item {
+  display: none;
+}
+
+.parentmenu:hover .parentmenu-item {
+  display: block;
+}
 .top-header {
   width: 100%;
 }
@@ -131,7 +158,19 @@ body {
 .text-golden {
   color: gold;
 }
+/* img {
+  animation: rotate 5s linear infinite;
+  transform-style: preserve-3d;
+}
 
+@keyframes rotate {
+  from {
+    transform: rotate3d(1, 0, 1, 10deg);
+  }
+  to {
+    transform: rotate3d(1, 0, 0, 360deg);
+  }
+} */
 /* .ic {
   font-size: 2rem;
   color: #ccc;

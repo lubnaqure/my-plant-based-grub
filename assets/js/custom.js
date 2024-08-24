@@ -1,4 +1,44 @@
 $(document).ready(function () {
+    // $(document).on("mouseover", "#navbarDropdown", function (e) {
+    //     e.preventDefault();
+    //     $(this).closest("li").find(".dropdown-menu").stop(true, true).slideDown(200);
+    // });
+
+    // $(document).on("mouseout", "#navbarDropdown", function (e) {
+    //     e.preventDefault();
+    //     $(this).closest("li").find(".dropdown-menu").stop(true, true).slideUp(200);
+    // });
+    // $(document).on("mouseover", ".nav-item.dropdown", function (e) {
+    //     e.preventDefault();
+    //     // Show the top-level dropdown menu
+    //     $(this).find(".dropdown-menu").stop(true, true).slideDown(200);
+    // });
+
+    // $(document).on("mouseleave", ".nav-item.dropdown", function (e) {
+    //     e.preventDefault();
+    //     // Hide the top-level dropdown menu
+    //     $(this).find(".dropdown-menu").stop(true, true).slideUp(200);
+    // });
+
+    // // Handle nested dropdowns
+    // $(document).on("mouseover", ".nav-item .dropdown-menu", function (e) {
+    //     e.preventDefault();
+    //     // Show the nested dropdown menu
+    //     $(this).find(".dropdown-menu").stop(true, true).slideDown(200);
+    // });
+
+    // $(document).on("mouseleave", ".nav-item .dropdown-menu", function (e) {
+    //     e.preventDefault();
+    //     // Hide the nested dropdown menu
+    //     $(this).find(".dropdown-menu").stop(true, true).slideUp(200);
+    // });
+
+    $(document).on("click", ".parentmenu", function () {
+        window.open("recipes.html", "_self");
+    });
+    // $(document).on("mouseemove", ".dropdown", function () {
+    //     $(this).closest("ul").find(".dropdown-menu").hide(200);
+    // });
     $(document).on("click", ".navbar-toggler", function (e) {
         e.preventDefault();
         $($(this).data('bs-target')).toggle(200);

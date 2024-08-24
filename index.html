@@ -7,9 +7,17 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
     <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
     <script src="assets/plugins/jquery/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/slider.js"></script>
     <script src="assets/js/custom.js"></script>
+    <!-- Popper.js (required for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title>My Plant Based Grub</title>
     <style>
         @font-face {
@@ -62,17 +70,52 @@
                             <li class="nav-item">
                                 <a class="nav-link active" href="about-us.html">About</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="recipes.html">Recipes</a>
-                            </li>
-                            <!-- <li class="nav-item dropdown">
-                                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <!-- <li class="nav-item">
+                                <a class="nav-link active" href="">Recipes</a>
+                            </li> -->
+                            <li class="nav-item dropdown parentmenu">
+                                <a class="nav-link dropdown-toggle active" href="" id="userHomeDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     Recipes
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="recipes.html">Recipes</a></li>
-                                    <li><a class="dropdown-item" href="recipes-detail.html">Recipes Details</a></li>
+                                <ul class="dropdown-menu dropdown-menu-white parentmenu-item dropdown-menu-end w-100 text-center"
+                                    aria-labelledby="userHomeDropdown">
+                                    <li class="dropdown submenu">
+                                        <a class="dropdown-item dropdown-toggle" style="font-size: 14px;" href="#"
+                                            id="getTopupDropdown" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Browse by category
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-whte submenu-item dropdown-menu-end w-100 text-center"
+                                            aria-labelledby="getTopupDropdown">
+                                            <li><a class="dropdown-item" href="#">Brunch</a></li>
+                                            <li><a class="dropdown-item" href="#">Light Breakfast</a></li>
+                                            <li><a class="dropdown-item" href="#">Appetizers</a></li>
+                                            <li><a class="dropdown-item" href="#">Handheld</a></li>
+                                            <li><a class="dropdown-item" href="#">Dessert</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Recipes
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownSubmenu"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownSubmenu">
+                                            <li><a class="dropdown-item" href="#">Brunch</a></li>
+                                            <li><a class="dropdown-item" href="#">Light Breakfast</a></li>
+                                            <li><a class="dropdown-item" href="#">Appetizers</a></li>
+                                            <li><a class="dropdown-item" href="#">Handheld</a></li>
+                                            <li><a class="dropdown-item" href="#">Dessert</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li> -->
 
@@ -97,139 +140,227 @@
             <div class="col-sm-12 mt-lg-5">
                 <div class="w-100 d-flex justify-content-between align-items-baseline">
                     <h1 class="heading mx-lg-3">
-                        What's New
+                        What's new
                     </h1>
                     <h4 class="mx-4" style="color: #B8BACF !important;font-weight:bold;">
-                        See All
+                        See all
                     </h4>
                 </div>
             </div>
-            <div class="col-md-12 col-lg-4">
-                <!-- <div style="width: 100% !important;margin:0px auto !important;"> -->
-                <div class="card" style="border:none !important;outline:none !important;">
-                    <div class="card-body">
-                        <img src="assets/img/what-new/1.jpg" class="whats-new-img w-100 img-fluid" />
-                    </div>
-                    <p class="text-center " style="color: #D2D5DD !important;font-weight:bold;font-size:13px">
-                        COOKIE & PASTRY
-                    </p>
-                    <h3 class="text-center" style="color: #B8BACF !important;font-weight:bold;">
-                        Sweet Spicy Tofu
-                    </h3>
-                    <div style="width: 85% !important;margin:0px auto !important">
-                        <div class="w-100 d-flex justify-content-between align-items-center">
-                            <div style="width: 45%;text-align:left !important">
-                                <p class="" style="font-size:x-small;font-weight:bold">
-                                    <img src="assets/img/what-new/icons/alarm.png">
-                                    <!-- <i class="far fa-clock"></i> -->
-                                    &nbsp;
-                                    150 Minuts
-                                </p>
+        </div>
+        <div id="carouselExampleControls" class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card" style="border:none !important;outline:none !important;">
+                        <div class="card-body">
+                            <img src="assets/img/what-new/1.jpg" class="whats-new-img w-100 img-fluid" />
+                        </div>
+                        <p class="text-center " style="color: #D2D5DD !important;font-weight:bold;font-size:13px">
+                            COOKIE & PASTRY
+                        </p>
+                        <h3 class="text-center" style="color: #B8BACF !important;font-weight:bold;">
+                            Sweet Spicy Tofu
+                        </h3>
+                        <div style="width: 85% !important;margin:0px auto !important">
+                            <div class="w-100 d-flex justify-content-between align-items-center">
+                                <div style="width: 45%;text-align:left !important">
+                                    <p class="" style="font-size:x-small;font-weight:bold">
+                                        <img src="assets/img/what-new/icons/alarm.png">
+                                        <!-- <i class="far fa-clock"></i> -->
+                                        &nbsp;
+                                        150 Minuts
+                                    </p>
+                                </div>
+                                <div style="width: 45%;text-align:right !important">
+                                    <p class="" style="font-size:x-small;font-weight:bold">
+                                        <img src="assets/img/what-new/icons/skillet.png">
+                                        <!-- <i class="far fa-clock"></i> -->
+                                        &nbsp;
+                                        Difficult
+                                    </p>
+                                </div>
+                                <!-- <div style="width: 30%;">
+                                                <p class="" style="font-size:x-small;font-weight:bold">
+                                                    <img src="assets/img/what-new/icons/person.png">
+                                                    &nbsp;
+                                                    Marissa Clair
+                                                </p>
+                                            </div> -->
                             </div>
-                            <div style="width: 45%;text-align:right !important">
-                                <p class="" style="font-size:x-small;font-weight:bold">
-                                    <img src="assets/img/what-new/icons/skillet.png">
-                                    <!-- <i class="far fa-clock"></i> -->
-                                    &nbsp;
-                                    Difficult
-                                </p>
-                            </div>
-                            <!-- <div style="width: 30%;">
-                                <p class="" style="font-size:x-small;font-weight:bold">
-                                    <img src="assets/img/what-new/icons/person.png">
-                                    &nbsp;
-                                    Marissa Clair
-                                </p>
-                            </div> -->
                         </div>
                     </div>
                 </div>
-                <!-- </div> -->
-            </div>
-            <div class="col-md-12 col-lg-4">
-                <!-- <div style="width: 80% !important;margin:0px auto !important;"> -->
-                <div class="card" style="border:none !important;outline:none !important;">
-                    <div class="card-body">
-                        <img src="assets/img/what-new/2.jpg" class="whats-new-img img-fluid" />
-                    </div>
-                    <p class="text-center " style="color: #D2D5DD !important;font-weight:bold;font-size:13px">
-                        COOKIE & PASTRY
-                    </p>
-                    <h3 class="text-center" style="color: #B8BACF !important;font-weight:bold;">
-                        Nashville Mushrooms
-                    </h3>
-                    <div style="width: 85% !important;margin:0px auto !important">
-                        <div class="w-100 d-flex justify-content-between align-items-center">
-                            <div style="width: 45%;text-align:left !important">
-                                <p class="" style="font-size:x-small;font-weight:bold">
-                                    <img src="assets/img/what-new/icons/alarm.png">
-                                    <!-- <i class="far fa-clock"></i> -->
-                                    &nbsp;
-                                    150 Minuts
-                                </p>
+                <div class="carousel-item">
+                    <div class="card" style="border:none !important;outline:none !important;">
+                        <div class="card-body">
+                            <img src="assets/img/what-new/2.jpg" class="whats-new-img img-fluid" />
+                        </div>
+                        <p class="text-center " style="color: #D2D5DD !important;font-weight:bold;font-size:13px">
+                            COOKIE & PASTRY
+                        </p>
+                        <h3 class="text-center" style="color: #B8BACF !important;font-weight:bold;">
+                            Nashville Mushrooms
+                        </h3>
+                        <div style="width: 85% !important;margin:0px auto !important">
+                            <div class="w-100 d-flex justify-content-between align-items-center">
+                                <div style="width: 45%;text-align:left !important">
+                                    <p class="" style="font-size:x-small;font-weight:bold">
+                                        <img src="assets/img/what-new/icons/alarm.png">
+                                        <!-- <i class="far fa-clock"></i> -->
+                                        &nbsp;
+                                        150 Minuts
+                                    </p>
+                                </div>
+                                <div style="width: 45%;text-align:right !important">
+                                    <p class="" style="font-size:x-small;font-weight:bold">
+                                        <img src="assets/img/what-new/icons/skillet.png">
+                                        <!-- <i class="far fa-clock"></i> -->
+                                        &nbsp;
+                                        Difficult
+                                    </p>
+                                </div>
+                                <!-- <div style="width: 30%;">
+                                                <p class="" style="font-size:x-small;font-weight:bold">
+                                                    <img src="assets/img/what-new/icons/person.png">
+                                                    &nbsp;
+                                                    Marissa Clair
+                                                </p>
+                                            </div> -->
                             </div>
-                            <div style="width: 45%;text-align:right !important">
-                                <p class="" style="font-size:x-small;font-weight:bold">
-                                    <img src="assets/img/what-new/icons/skillet.png">
-                                    <!-- <i class="far fa-clock"></i> -->
-                                    &nbsp;
-                                    Difficult
-                                </p>
-                            </div>
-                            <!-- <div style="width: 30%;">
-                                <p class="" style="font-size:x-small;font-weight:bold">
-                                    <img src="assets/img/what-new/icons/person.png">
-                                    &nbsp;
-                                    Marissa Clair
-                                </p>
-                            </div> -->
                         </div>
                     </div>
                 </div>
-                <!-- </div> -->
-            </div>
-            <div class="col-md-12 col-lg-4">
-                <!-- <div style="width: 80% !important;margin:0px auto !important;"> -->
-                <div class="card" style="border:none !important;outline:none !important;">
-                    <div class="card-body">
-                        <img src="assets/img/what-new/3.jpg" class="whats-new-img img-fluid" />
-                    </div>
-                    <p class="text-center " style="color: #D2D5DD !important;font-weight:bold;font-size:13px">
-                        COOKIE & PASTRY
-                    </p>
-                    <h3 class="text-center" style="color: #B8BACF !important;font-weight:bold;">
-                        Sesame Baggels
-                    </h3>
-                    <div style="width: 85% !important;margin:0px auto !important">
-                        <div class="w-100 d-flex justify-content-between align-items-center">
-                            <div style="width: 45%;text-align:left !important">
-                                <p class="" style="font-size:x-small;font-weight:bold">
-                                    <img src="assets/img/what-new/icons/alarm.png">
-                                    <!-- <i class="far fa-clock"></i> -->
-                                    &nbsp;
-                                    150 Minuts
-                                </p>
+                <div class="carousel-item">
+                    <div class="card" style="border:none !important;outline:none !important;">
+                        <div class="card-body">
+                            <img src="assets/img/what-new/3.jpg" class="whats-new-img img-fluid" />
+                        </div>
+                        <p class="text-center " style="color: #D2D5DD !important;font-weight:bold;font-size:13px">
+                            COOKIE & PASTRY
+                        </p>
+                        <h3 class="text-center" style="color: #B8BACF !important;font-weight:bold;">
+                            Sesame Baggels
+                        </h3>
+                        <div style="width: 85% !important;margin:0px auto !important">
+                            <div class="w-100 d-flex justify-content-between align-items-center">
+                                <div style="width: 45%;text-align:left !important">
+                                    <p class="" style="font-size:x-small;font-weight:bold">
+                                        <img src="assets/img/what-new/icons/alarm.png">
+                                        <!-- <i class="far fa-clock"></i> -->
+                                        &nbsp;
+                                        150 Minuts
+                                    </p>
+                                </div>
+                                <div style="width: 45%;text-align:right !important">
+                                    <p class="" style="font-size:x-small;font-weight:bold">
+                                        <img src="assets/img/what-new/icons/skillet.png">
+                                        <!-- <i class="far fa-clock"></i> -->
+                                        &nbsp;
+                                        Difficult
+                                    </p>
+                                </div>
+                                <!-- <div style="width: 30%;">
+                                                <p class="" style="font-size:x-small;font-weight:bold">
+                                                    <img src="assets/img/what-new/icons/person.png">
+                                                    &nbsp;
+                                                    Marissa Clair
+                                                </p>
+                                            </div> -->
                             </div>
-                            <div style="width: 45%;text-align:right !important">
-                                <p class="" style="font-size:x-small;font-weight:bold">
-                                    <img src="assets/img/what-new/icons/skillet.png">
-                                    <!-- <i class="far fa-clock"></i> -->
-                                    &nbsp;
-                                    Difficult
-                                </p>
-                            </div>
-                            <!-- <div style="width: 30%;">
-                                <p class="" style="font-size:x-small;font-weight:bold">
-                                    <img src="assets/img/what-new/icons/person.png">
-                                    &nbsp;
-                                    Marissa Clair
-                                </p>
-                            </div> -->
                         </div>
                     </div>
                 </div>
-                <!-- </div> -->
+                <div class="carousel-item">
+                    <div class="card" style="border:none !important;outline:none !important;">
+                        <div class="card-body">
+                            <img src="assets/img/what-new/2.jpg" class="whats-new-img img-fluid" />
+                        </div>
+                        <p class="text-center " style="color: #D2D5DD !important;font-weight:bold;font-size:13px">
+                            COOKIE & PASTRY
+                        </p>
+                        <h3 class="text-center" style="color: #B8BACF !important;font-weight:bold;">
+                            Nashville Mushrooms
+                        </h3>
+                        <div style="width: 85% !important;margin:0px auto !important">
+                            <div class="w-100 d-flex justify-content-between align-items-center">
+                                <div style="width: 45%;text-align:left !important">
+                                    <p class="" style="font-size:x-small;font-weight:bold">
+                                        <img src="assets/img/what-new/icons/alarm.png">
+                                        <!-- <i class="far fa-clock"></i> -->
+                                        &nbsp;
+                                        150 Minuts
+                                    </p>
+                                </div>
+                                <div style="width: 45%;text-align:right !important">
+                                    <p class="" style="font-size:x-small;font-weight:bold">
+                                        <img src="assets/img/what-new/icons/skillet.png">
+                                        <!-- <i class="far fa-clock"></i> -->
+                                        &nbsp;
+                                        Difficult
+                                    </p>
+                                </div>
+                                <!-- <div style="width: 30%;">
+                                                <p class="" style="font-size:x-small;font-weight:bold">
+                                                    <img src="assets/img/what-new/icons/person.png">
+                                                    &nbsp;
+                                                    Marissa Clair
+                                                </p>
+                                            </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card" style="border:none !important;outline:none !important;">
+                        <div class="card-body">
+                            <img src="assets/img/what-new/1.jpg" class="whats-new-img w-100 img-fluid" />
+                        </div>
+                        <p class="text-center " style="color: #D2D5DD !important;font-weight:bold;font-size:13px">
+                            COOKIE & PASTRY
+                        </p>
+                        <h3 class="text-center" style="color: #B8BACF !important;font-weight:bold;">
+                            Sweet Spicy Tofu
+                        </h3>
+                        <div style="width: 85% !important;margin:0px auto !important">
+                            <div class="w-100 d-flex justify-content-between align-items-center">
+                                <div style="width: 45%;text-align:left !important">
+                                    <p class="" style="font-size:x-small;font-weight:bold">
+                                        <img src="assets/img/what-new/icons/alarm.png">
+                                        <!-- <i class="far fa-clock"></i> -->
+                                        &nbsp;
+                                        150 Minuts
+                                    </p>
+                                </div>
+                                <div style="width: 45%;text-align:right !important">
+                                    <p class="" style="font-size:x-small;font-weight:bold">
+                                        <img src="assets/img/what-new/icons/skillet.png">
+                                        <!-- <i class="far fa-clock"></i> -->
+                                        &nbsp;
+                                        Difficult
+                                    </p>
+                                </div>
+                                <!-- <div style="width: 30%;">
+                                                <p class="" style="font-size:x-small;font-weight:bold">
+                                                    <img src="assets/img/what-new/icons/person.png">
+                                                    &nbsp;
+                                                    Marissa Clair
+                                                </p>
+                                            </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
         <!-- What's New End-->
         <!-- Featured Post Start-->
@@ -239,16 +370,19 @@
             </div>
             <div class="col-md-12 col-lg-6 mt-lg-5">
                 <div class="" style="padding-left: 40px;">
-                    <h1 class="heading" style="font-size: 60px;">Featured Post</h1>
+                    <h1 class="heading" style="font-size: 60px;">Featured post</h1>
                     <br>
                     <p>
-                        Culinary magic awaits you at Masterfood, your go-to destination for all things food. Dive into a
-                        diverse collection of recipes, from quick weeknight dinners to elegant gourmet feasts. It's time
+                        Culinary magic awaits you at Masterfood, your go-to destination for all things food. Dive
+                        into a
+                        diverse collection of recipes, from quick weeknight dinners to elegant gourmet feasts. It's
+                        time
                         to turn your kitchen into a haven of taste and aroma.
                     </p>
                     <p>
                         Discover 'The Ultimate Recipe Hub' where
-                        culinary dreams come to life. Whether you're a seasoned chef or a kitchen novice, our website
+                        culinary dreams come to life. Whether you're a seasoned chef or a kitchen novice, our
+                        website
                         offers a world of recipes and resources to suit every taste and skill level. Let's cook up
                         something extraordinary together!
                     </p>
@@ -262,7 +396,7 @@
             <div class="col-sm-12 mt-lg-5 mb-lg-3">
                 <div class="w-100 d-flex justify-content-between align-items-baseline">
                     <h1 class="heading mx-lg-3">
-                        Browse by Category
+                        Browse by category
                     </h1>
                     <h4 class="mx-4" style="color: #B8BACF !important;font-weight:bold;">
                         See All
@@ -319,7 +453,7 @@
         <!-- Trending This Month Start-->
         <div class="row mt-lg-5">
             <div class="col-sm-12">
-                <h1 class="heading text-start" style="font-size: 45px;">Trending This Month</h1>
+                <h1 class="heading text-start" style="font-size: 45px;">Trending this month</h1>
             </div>
             <div class="col-md-6 mt-lg-5">
                 <img src="assets/img/teending-this-month/image 6.png" class="w-100 rounded-4 img-fluid">
@@ -347,23 +481,26 @@
                                 </p>
                             </div>
                             <!-- <div style="width: 30%;">
-                                <p class="fs-6 fs-md-5 fs-lg-4" style="font-size:x-small;font-weight:bold">
-                                    <img src="assets/img/what-new/icons/person.png">
-                                    &nbsp;
-                                    Marissa Clair
-                                </p>
-                            </div> -->
+                            <p class="fs-6 fs-md-5 fs-lg-4" style="font-size:x-small;font-weight:bold">
+                                <img src="assets/img/what-new/icons/person.png">
+                                &nbsp;
+                                Marissa Clair
+                            </p>
+                        </div> -->
                         </div>
                     </div>
                     <br>
                     <p class="text-sm-start fs-6 fs-md-5 fs-lg-4 text-wrap flex-wrap">
                         Grilled lamb, a culinary masterpiece that transcends the ordinary, promises a symphony of
-                        flavors and textures that dance upon your palate. Each succulent bite is a testament to the art
+                        flavors and textures that dance upon your palate. Each succulent bite is a testament to the
+                        art
                         of grilling, where tender cuts of lamb are transformed into smoky, charred perfection.
                     </p>
                     <p class="text-sm-start fs-6 fs-md-5 fs-lg-4 text-wrap">The first
-                        bite reveals a crust that crackles under the gentle pressure of your teeth, releasing a burst of
-                        savory juices that mingle with the flavors of rosemary, thyme, and garlic. The lamb's interior,
+                        bite reveals a crust that crackles under the gentle pressure of your teeth, releasing a
+                        burst of
+                        savory juices that mingle with the flavors of rosemary, thyme, and garlic. The lamb's
+                        interior,
                         tender and blushingly pink, is a testament to careful cooking, promising an irresistible
                         tenderness that practically melts on your tongue.
                     </p>
@@ -402,11 +539,11 @@
                 </div>
                 <div class="nav-links">
                     <a href="index.html">Home</a>
-                    <a href="recipes.html">Recipes</a>
+                    <a href="">Recipes</a>
                     <a href="about-us.html">About</a>
                 </div>
                 <div class="footer-text fw-bold">
-                    <p>Simple Recipes That<br>Make you Feel Good</p>
+                    <p>Approchable eats</p>
                 </div>
             </div>
         </div>
@@ -418,6 +555,7 @@
             });
         });
     </script>
+    <script src="assets/js/slider.js"></script>
 </body>
 
 </html>

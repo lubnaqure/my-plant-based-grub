@@ -33,7 +33,12 @@ $(document).ready(function () {
     //     $(this).find(".dropdown-menu").stop(true, true).slideUp(200);
     // });
 
-    $(document).on("click", ".parentmenu", function () {
+    $(document).on("click", ".parentmenu", function (e) {
+        e.preventDefault();
+        window.open("recipes.html", "_self");
+    });
+    $(document).on("click", ".submenu", function (e) {
+        e.preventDefault();
         window.open("recipes.html", "_self");
     });
     // $(document).on("mouseemove", ".dropdown", function () {

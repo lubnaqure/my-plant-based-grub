@@ -6,6 +6,16 @@
   font-weight: normal;
   font-style: normal;
 }
+.submenu:hover .dropdown-toggle {
+  color: #808080 !important;
+}
+.nav-item:hover .nav-link {
+  color: #808080 !important;
+}
+.submenu-item > li:hover .dropdown-item {
+  color: #808080 !important;
+}
+
 footer {
   background-color: #d1d5db;
   padding: 20px;

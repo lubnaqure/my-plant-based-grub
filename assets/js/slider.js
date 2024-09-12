@@ -3,7 +3,7 @@ var multipleCardCarousel = document.querySelector(
 );
 if (window.matchMedia("(min-width: 768px)").matches) {
     var carousel = new bootstrap.Carousel(multipleCardCarousel, {
-        interval: false,
+        interval: true,
     });
     var carouselWidth = $(".carousel-inner")[0].scrollWidth;
     var cardWidth = $(".carousel-item").width();
